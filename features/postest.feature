@@ -14,3 +14,9 @@ Feature: Test point of sale machine
     Given existing shopper picks one item with a permitted quantity
     When the billing is done
     Then user is charged with amount after tax and discount
+    
+    
+    Scenario: Yahoo Login
+      Given I have yahoo login credentials
+      When used on web pae
+      Then I could login
